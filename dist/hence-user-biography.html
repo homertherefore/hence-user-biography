@@ -1,0 +1,22 @@
+<link rel="import" href="../../polymer/polymer.html">
+
+<dom-module id="hence-user-biography">
+  <template>
+    <div id="content">
+      <div id="image">
+        <img src$="{{avatar}}">
+      </div>
+      <div id="details">
+        <p>{{biography}}</p>
+
+        <p>
+          <template is="dom-repeat" items="{{mySites}}" as="site">
+            <span class="link"><a href="{{site.url}}">{{site.label}}</a></span><br>
+          </template>
+        </p>
+      </div>
+    </div>
+  </template>
+<link rel="import" type="css" href="css/hence-user-biography.min.css">
+        <script src="js/hence-user-biography.min.js"></script>
+        </dom-module>

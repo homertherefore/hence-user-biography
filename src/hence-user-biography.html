@@ -1,0 +1,20 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<dom-module id="hence-user-biography">
+  <template>
+    <div id="content">
+      <div id="image">
+        <img src$="{{avatar}}">
+      </div>
+      <div id="details">
+        <p>{{biography}}</p>
+
+        <p>
+          <template is="dom-repeat" items="{{mySites}}" as="site">
+            <span class="link"><a href="{{site.url}}">{{site.label}}</a></span><br>
+          </template>
+        </p>
+      </div>
+    </div>
+  </template>
+</dom-module>
