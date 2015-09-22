@@ -3,11 +3,8 @@
 <dom-module id="hence-user-biography">
   <template>
     <div id="content">
-      <div id="image">
-        <img src$="{{avatar}}">
-      </div>
       <div id="details">
-        <p>{{biography}}</p>
+        <p><img class="image" src$="{{avatar}}"><span>{{biography}}</span></p>
 
         <p>
           <template is="dom-repeat" items="{{mySites}}" as="site">

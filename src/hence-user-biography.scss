@@ -53,6 +53,10 @@ Styleguide 2.1
   $ms-ratio: $minor-second; // define the modular-scale for this component; DO NO REMOVE, you've been warned. (¬_¬)ﾉ
 }
 
+.image {
+  float: left;
+  padding: 0 5% 5% 0;
+}
 
 /***************************
 Typography
